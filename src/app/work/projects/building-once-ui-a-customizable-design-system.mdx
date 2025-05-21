@@ -1,45 +1,67 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "Orrery web app"
+publishedAt: "2024-10-08"
+summary: "The Orrery Web App is a 3D interactive visualization tool that simulates planetary and Near-Earth Object (NEO) orbits. Built using React and Three.js, it helps users explore celestial mechanics, understand NEO proximity, and view real-time orbital data sourced from NASA APIs—all in an engaging, educational interface."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
-team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Jane Smith"
-    role: "Product Manager"
-    avatar: "/images/projects/project-01/avatar-01.png"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - "/images/qr1.png"
+  - "/images/projects/project-01/image-03.jpg"
+
+link: "https://orrery-web-app-khaki.vercel.app/"
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+The Orrery Web App is a dynamic, browser-based visualization tool that simulates the orbits of planets and Near-Earth Objects (NEOs) in a solar system-like interface. Designed to make complex orbital mechanics and asteroid tracking accessible and engaging, the app allows users to observe real-time trajectories, learn orbital parameters, and understand how close NEOs come to Earth—all through an interactive 3D experience.
+
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- ** Planetary and NEO Orbit Visualization**: Circular orbits for planets and elliptical orbits for NEOs, displayed with accuracy and clarity.
+- **Interactive 3D UI**: Users can rotate, zoom, and explore the solar system using intuitive controls.
+
+- **NEO Close Approach Info**: Displays key data like distance from Earth, orbital period, approach year, and return cycles.
+
+- **Celestial Object Details**: Real-time display of object metadata, such as diameter, orbital speed, distance from the sun, and moons (for planets).
+- **Educational Overlay**: Simplifies Keplerian elements and other orbital parameters for learners.
+
+
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+-3D Graphics: Three.js (WebGL-based rendering for realistic planetary motion)
+
+-Data Source: NASA JPL Open APIs (for NEO and planetary data)
+
+-Other Libraries:
+
+-React Three Fiber (for integrating Three.js in React)
+
+-D3.js (for orbit paths and smooth animations)
+
+-Axios for API consumption
+
+-GSAP / Framer Motion for animations
+
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+🧮 Orbital Mechanics Simulation: Translating Keplerian elements into accurate 3D motion was complex and required deep mathematical understanding.
+
+📊 Dynamic Data Handling: Parsing and visualizing live JSON data from NASA’s APIs in a performance-optimized manner.
+
+🧭 Real-Time User Interaction: Implementing intuitive camera controls and object selection within a crowded 3D scene.
+
+⚖ Performance Optimization: Rendering multiple moving bodies in real-time while maintaining FPS stability.
+
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+🌍 Gained strong expertise in 3D web development using Three.js and React Three Fiber.
+
+📐 Developed a deeper understanding of celestial mechanics and orbital elements through hands-on implementation.
+
+🌟 Created a highly engaging and educational visualization tool that was well-received by mentors and judges.
+
+🛠 Enhanced skills in API integration, math-based simulations, and UI/UX design for STEM tools.
+
+🏅 Selected among top submissions in the challenge, representing innovation in science communication.

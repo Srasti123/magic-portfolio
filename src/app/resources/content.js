@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Srasti",
+  lastName: "Bhardwaj",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Software Developer",
+  avatar: "/images/avatars.jpg",
+  location: "Greater Noida", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi","Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -29,22 +29,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Srasti123",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/srasti-bhardwaj-a00a4b276/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
-    name: "Email",
+    name: "srastibhardwaj1405@gmail.com",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "srastibhardwaj1405@gmail.com",
   },
 ];
 
@@ -52,10 +47,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Software Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
+      I'm Srasti Bhardwaj, a Software Engineering Student ,I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -81,20 +76,22 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hi there! I’m Srasti Bhardwaj, a pre-final year student in Computer Science and Engineering at Galgotias University, diving deep into the world of Artificial Intelligence and Machine Learning.
+
+I’m not just learning code—I’m learning how to make machines think, solve real-world problems, and maybe even surprise us a little. From crafting models to crunching data, I love turning logic into innovation using Python, C++, and AI tools.
+
+But there’s more to me than lines of code. I love the strategy of a good chess match, the rhythm of dance, and the timeless tales hidden in history books. These passions fuel my creativity, focus, and curiosity—on and off the screen.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
         company: "FLY",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -138,13 +135,13 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Galgotias University",
+        description: <>B.tech with Speclization in AIML</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      // {
+      //   name: "Build the Future",
+      //   description: <>Studied online marketing and personal branding.</>,
+      // },
     ],
   },
   technical: {
@@ -152,18 +149,56 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "C++",
+        // description: <>Use it to learn DSA and enhance my coding ablities</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/qw1.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
+        ],
+      },
+      {
+        title: "Python",
+        images: [
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/qw3.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "SQL",
+        images: [
+          {
+            src: "/images/qw4.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "JavaScript",
+        images: [
+          {
+            src: "/images/qw6.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "HTML, CSS",
+        images: [
+          {
+            src: "/images/qw5.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -172,11 +207,20 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/qw7.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "TypeScript",
+        images: [
+          {
+            src: "/images/qw2.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -203,83 +247,4 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work,  };

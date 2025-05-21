@@ -1,44 +1,53 @@
 ---
-title: "Automating Design Handovers with a Figma to Code Pipeline"
-publishedAt: "2024-04-01"
-summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
+title: "Digital media recommender"
+publishedAt: "2024-09-14"
+summary: "The digital media recommender is a recommendation system that allows users to learn about a particular topic by suggesting relevant movies, games, or books. This allows users to establish a foundation in a particular sector and acquire additional knowledge."
 images:
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
-team:
-  - name: "John Doe"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-link: "https://once-ui.com/"
+  - "/images/qs1.jpg"
+  - "/images/qs2.jpg"
+  - "/images/qs3.jpg"
+  - "/images/qs4.jpg"
+
 ---
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+The Digital Media Recommender is an intelligent platform designed to personalize the learning experience by recommending not just educational videos, but also engaging media content like games, web series, and movies that align with the user's chosen domain of interest. The system leverages smart recommendation logic to cater to diverse learning preferences, making education more relatable, immersive, and enjoyable.
+
 
 ## Key Features
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Smart Recommendations**: Suggests multimedia content (videos, games, movies, series) based on the selected learning domain.
+
+- **Category-Based Learning Paths**: Users can explore predefined or custom learning categories like Science, History, Coding, etc
+- ** Gamified Suggestions**: Includes game-based learning suggestions to encourage interactive education
+- **Entertainment with Education**: Recommends movies or shows that offer strong educational or conceptual relevance.
+
 
 ## Technologies Used
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Frontend**: React.js (with modern component architecture and responsive design)
+
+- **Backend**: Django REST Framework (for robust API development)
+
+- **Database**: MongoDB (for storing user preferences, content data, and category mappings)
 
 ## Challenges and Learnings
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+🔄 Mapping Entertainment to Education: Associating games or movies with educational themes required thorough research and metadata analysis.
+
+📊 Data Curation: Creating a balanced and diverse content dataset across domains was time-consuming.
+
+⚙ Recommendation Logic: Building a meaningful recommendation engine that isn’t just keyword-based but also relevance-aware.
+
+🌐 Integration: Ensuring seamless integration of the frontend with backend APIs and MongoDB.
 
 ## Outcome
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+💡 Gained hands-on experience in full-stack development using modern frameworks.
 
----
+🤝 Improved team collaboration and project planning under a time-bound hackathon environment.
 
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+🧠 Developed skills in recommendation systems, API integration, and NoSQL data modeling.
+
+🏁 Successfully built and deployed a scalable MVP within the hackathon deadline, which received positive feedback from mentors and evaluators.
